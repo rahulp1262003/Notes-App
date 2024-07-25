@@ -3,10 +3,13 @@ import Add from './Add'
 import Note from './Note'
 
 function App() {
+
     return (
-        <div className='w-full h-screen bg-black relative'>
-            <Add />
-            <Note />
+        <div>
+            <div className='relative'><Add /></div>
+            <div className='w-full flex flex-row items-center justify-center flex-wrap absolute'>
+                <Note />
+            </div>
         </div>
     )
 }
