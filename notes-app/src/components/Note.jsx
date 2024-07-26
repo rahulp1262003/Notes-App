@@ -4,9 +4,9 @@ import React from 'react'
 function Note() {
   return (
     <div
-    className='w-[15rem] h-[15rem] bg-white rounded-[2.5rem] m-8 cursor-pointer overflow-hidden'>
+    className='w-[15rem] h-[15.6rem] bg-white rounded-[2.5rem] m-8 cursor-pointer overflow-hidden'>
         <div className="w-[100%] h-[100%] flex justify-between flex-col">
-            <div className="h-12 bg-blue-400 flex justify-center items-center">
+            <div className="h-[3.2rem] bg-blue-400 flex justify-center items-center">
                 <h3 className='text-black text-[1.4rem]'>Note</h3>
             </div>
         </div>

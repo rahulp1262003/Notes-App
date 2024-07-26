@@ -5,9 +5,16 @@ import Note from './Note'
 function App() {
 
     return (
-        <div>
-            <div className='relative'><Add /></div>
-            <div className='w-full flex flex-row items-center justify-center flex-wrap absolute'>
+        <div className='inline-block'>
+            <div className='inline-block'><Add /></div>
+            <div className='w-full flex flex-row items-center justify-center flex-wrap '>
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
                 <Note />
             </div>
         </div>
