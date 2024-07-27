@@ -6,8 +6,8 @@ function App() {
 
     return (
         <div className='inline-block'>
-            <div className='inline-block'><Add /></div>
             <div className='w-full flex flex-row items-center justify-center flex-wrap '>
+            <div className='inline-block'><Add /></div>
                 <Note />
                 <Note />
                 <Note />
