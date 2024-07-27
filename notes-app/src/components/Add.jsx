@@ -22,7 +22,6 @@ function Add() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormData(initialFormData)
-    console.log(formData);
 
   }
 
