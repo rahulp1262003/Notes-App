@@ -1,30 +1,25 @@
-import React,{useState} from 'react'
-import Add from './Add'
-import Note from './Note'
+import React, { useState } from 'react'
+import Add from './Add.jsx'
+import Note from './Note.jsx'
 
 function App() {
 
-    const initialFormData = {
-        title: '',
-        details: ''
-    };
+    const [formEntries, setFormEntries] = useState([]);
 
-    const [formData, setFormData] = useState(initialFormData);
-
-    const handleFormSubmit = (data) => {
-        console.log('Form Data:', data);
-        setFormData(data);
-    };
+    const handleFormSubmit = (newEntry) => {
+        console.log('New Entry : ', newEntry);
+        setFormEntries([...formEntries, newEntry]);
+        console.log('Form Entry', formEntries);
+    }
 
     return (
-        <div className='inline-block'>
-            <div className='w-full flex flex-row items-center justify-center flex-wrap '>
-                <div className='inline-block'>
+            <div className='w-full flex items-center justify-start flex-wrap'>
+                <div className='w-full flex justify-center items-center flex-row flex-wrap'>
                     <Add onFormSubmit={handleFormSubmit} />
+                    {formEntries.map((entry, index) => <Note key={index} formData={entry} />
+                    )}
                 </div>
-                <Note formData={formData} />
             </div>
-        </div>
     )
 }
 

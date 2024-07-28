@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import '../index.css';
 // import { PiPlusLight } from "react-icons/pi";
 
-const initialFormData = {
-  title: '',
-  details: ''
-};
-function Add({onFormSubmit}) {
+
+
+function Add({ onFormSubmit }) {
+  const initialFormData = {
+    title: '',
+    details: ''
+  };
 
   const [formData, setFormData] = useState(initialFormData);
 
@@ -20,7 +22,7 @@ function Add({onFormSubmit}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.title.trim() === '' || formData.details.trim()  === '') {
+    if (formData.title.trim() === '' || formData.details.trim() === '') {
       alert('Fields cannot be empty');
       return;
     }
@@ -36,7 +38,7 @@ function Add({onFormSubmit}) {
         <textarea name="details" id="details" cols="" rows="6" className='w-full rounded-b-[2rem] outline-none pl-6 pr-6 pt-3 mt-2 resize-none text-lg ' placeholder='Add Details' value={formData.details} onChange={handleChange} ></textarea>
 
         <button type="submit" className='w-[5rem] absolute bottom-0 right-0 bg-blue-400 p-3 rounded-tl-3xl'>Add</button>
-        
+
       </form>
     </div>
   )
