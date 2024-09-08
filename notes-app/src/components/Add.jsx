@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import '../index.css';
+import Buttons from './Buttons';
+
 // import { PiPlusLight } from "react-icons/pi";
 
 
@@ -36,9 +38,7 @@ function Add({ onFormSubmit }) {
         <input type="text" name="title" id="title" className='w-full rounded-t-[2rem] p-3 pl-6 pr-6 outline-none text-lg' placeholder='Add Title' value={formData.title} onChange={handleChange} />
 
         <textarea name="details" id="details" cols="" rows="6" className='w-full rounded-b-[2rem] outline-none pl-6 pr-6 pt-3 mt-2 resize-none text-lg ' placeholder='Add Details' value={formData.details} onChange={handleChange} ></textarea>
-
         <button type="submit" className='w-[5rem] absolute bottom-0 right-0 bg-blue-400 p-3 rounded-tl-3xl'>Add</button>
-
       </form>
     </div>
   )

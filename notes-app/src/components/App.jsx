@@ -1,26 +1,32 @@
-import React, { useState } from 'react'
-import Add from './Add.jsx'
-import Note from './Note.jsx'
+import React, { useState } from 'react';
+import Note from './Note';
+import Add from './Add';
 
 function App() {
+    const [notes, setNotes] = useState([]);
 
-    const [formEntries, setFormEntries] = useState([]);
+    const handleFormSubmit = (formData) => {
+        setNotes([...notes, formData]);
+    };
 
-    const handleFormSubmit = (newEntry) => {
-        console.log('New Entry : ', newEntry);
-        setFormEntries([...formEntries, newEntry]);
-        console.log('Form Entry', formEntries);
-    }
+    const handleDeleteNote = (index) => {
+        setNotes((prevNotes) => prevNotes.filter((_, i) => i !== index));
+    };
 
     return (
-            <div className='w-full flex items-center justify-start flex-wrap'>
-                <div className='w-full flex justify-center items-center flex-row flex-wrap'>
-                    <Add onFormSubmit={handleFormSubmit} />
-                    {formEntries.map((entry, index) => <Note key={index} formData={entry} />
-                    )}
-                </div>
+        <div className='flex justify-center items-center flex-wrap '>
+            <Add onFormSubmit={handleFormSubmit} />
+            <div className="notes-container flex justify-center items-center flex-wrap">
+                {notes.map((note, index) => (
+                    <Note
+                        key={index}
+                        formData={note}
+                        onDelete={() => handleDeleteNote(index)}
+                    />
+                ))}
             </div>
-    )
+        </div>
+    );
 }
 
-export default App
+export default App;
