@@ -13,6 +13,10 @@ function App() {
         setNotes((prevNotes) => prevNotes.filter((_, i) => i !== index));
     };
 
+    const handleEditNote = (index, updatedNote) => {
+        setNotes((prevNotes) => prevNotes.map((note, i) => (i === index ? updatedNote : note)));
+    };
+
     return (
         <div className='flex justify-center items-center flex-wrap '>
             <Add onFormSubmit={handleFormSubmit} />
@@ -22,6 +26,7 @@ function App() {
                         key={index}
                         formData={note}
                         onDelete={() => handleDeleteNote(index)}
+                        onEdit={(updatedNote) => handleEditNote(index, updatedNote)}
                     />
                 ))}
             </div>
