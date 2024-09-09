@@ -18,7 +18,7 @@ function App() {
     };
 
     return (
-        <div className='flex justify-center items-center flex-wrap '>
+        <div className='flex justify-center items-center flex-wrap pt-8'>
             <Add onFormSubmit={handleFormSubmit} />
             <div className="notes-container flex justify-center items-center flex-wrap">
                 {notes.map((note, index) => (
