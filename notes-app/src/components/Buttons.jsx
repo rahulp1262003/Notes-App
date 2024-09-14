@@ -16,7 +16,7 @@ function Buttons({ set, onDelete, onEditToggle, randomColor }) {
             <button
                 type="button"
                 onClick={onDelete}
-                className={`${set ? 'w-auto' : 'w-[5rem]'} absolute bottom-2 left-2 bg-red-500 hover:bg-red-400 p-3 rounded-full m-1 transition-colors duration-300`}
+                className={`${set ? 'w-auto' : 'w-[5rem]'} absolute bottom-2 left-2 bg-red-500 hover:bg-red-400 p-3 rounded-full m-1 `}
             >
                 {set ? <AiOutlineDelete size='20px' color='white' /> : 'Add'}
             </button>

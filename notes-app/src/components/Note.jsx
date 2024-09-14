@@ -48,17 +48,17 @@ function Note({ formData, onDelete, onEdit }) {
 
   const handleDeleteClick = () => {
     setIsDeleting(true);
+    onDelete();
 
     // Wait for the animation to complete before calling onDelete
-    setTimeout(() => {
-      onDelete();
-    }, 300); // Matches the transition duration
+    // setTimeout(() => {
+    // }, 300); // Matches the transition duration
   };
 
   return (
     <div
-      className={`note group w-[16rem] bg-white rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300
-        ${isDeleting ? 'opacity-0 scale-90 h-0 m-0 p-0 overflow-hidden' : 'opacity-100 scale-100 h-[19rem]'}`}
+      className={`note group w-[16rem] h-[19rem] bg-white rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300
+        `}
     >
       {/* Heading of Note */}
       <div
