@@ -37,9 +37,9 @@ function Add({ onFormSubmit }) {
 
       <form action="#" onSubmit={handleSubmit} className='flex justify-between items-center flex-col h-full'>
 
-        <input type="text" name="title" id="title" className='w-full h-[22%] rounded-t-[2rem] p-3 pl-6 pr-6 outline-none text-lg' placeholder='Add Title' value={formData.title} onChange={handleChange} />
+        <input type="text" name="title" id="title" className='w-full h-[22%] rounded-t-[2rem] p-3 pl-6 pr-6 outline-none text-lg bg-slate-800 text-white' placeholder='Add Title' value={formData.title} onChange={handleChange} />
 
-        <textarea name="details" id="details" cols="" rows="7" className='w-full h-[77%] rounded-b-[2rem] outline-none pl-6 pr-6 pt-3 mt-2 resize-none text-lg ' placeholder='Add Details' value={formData.details} onChange={handleChange} ></textarea>
+        <textarea name="details" id="details" cols="" rows="7" className='w-full h-[77%] rounded-b-[2rem] outline-none pl-6 pr-6 pt-3 mt-2 resize-none text-lg bg-zinc-800 text-white' placeholder='Add Details' value={formData.details} onChange={handleChange} ></textarea>
 
 
         <button type="submit" className=' m-2 absolute bottom-1 right-1 bg-blue-400 p-3 rounded-full'><PiPlusLight size='25px'/></button>

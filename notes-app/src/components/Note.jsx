@@ -57,7 +57,7 @@ function Note({ formData, onDelete, onEdit }) {
 
   return (
     <div
-      className={`note group w-[16rem] h-[19rem] bg-white rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300
+      className={`note group w-[16rem] h-[19rem] bg-white rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300 bg-zinc-800
         `}
     >
       {/* Heading of Note */}
@@ -81,14 +81,14 @@ function Note({ formData, onDelete, onEdit }) {
       </div>
 
       {/* Details of Note */}
-      <div className='w-full h-[75%] inline-block justify-start items-start flex-wrap p-4 relative'>
+      <div className='w-full h-[75%] inline-block justify-start items-start flex-wrap p-4 relative text-white'>
         {isEditMode ? (
           <textarea
             name="details"
             rows="7"
             value={editedData.details}
             onChange={handleInputChange}
-            className='text-xl text-start break-words w-full rounded-md outline-none'
+            className='text-xl text-start break-words w-full rounded-md outline-none bg-zinc-800'
           ></textarea>
         ) : (
           <p className='text-xl text-start break-words'>
