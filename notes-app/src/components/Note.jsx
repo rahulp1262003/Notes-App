@@ -57,7 +57,7 @@ function Note({ formData, onDelete, onEdit }) {
 
   return (
     <div
-      className={`note group w-[16rem] h-[19rem] bg-white rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300 bg-zinc-800
+      className={`note group w-[16rem] h-[19rem] rounded-[2.5rem] m-3 cursor-pointer flex justify-between items-center flex-col relative hover:shadow-md transition-all duration-300 bg-zinc-800
         `}
     >
       {/* Heading of Note */}
