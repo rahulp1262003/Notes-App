@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="https://github.com/rahulp1262003/Notes-App/blob/main/notes-app/assets/logo.png" alt="Notes-TKing Logo" width="200"/>
+</p>
+
+
 # 📝 Notes-TKing
 
 A simple and elegant notes-taking web app built with **React JS**. Notes-TKing helps you jot down your thoughts, ideas, and to-dos in a clean and intuitive interface.
