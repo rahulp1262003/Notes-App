@@ -47,7 +47,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/notes-tking.git
-cd notes-tking
+git clone https://github.com/rahulp1262003/Notes-App.git
+cd notes-app
 ```
 
