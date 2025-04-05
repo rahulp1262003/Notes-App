@@ -22,6 +22,17 @@ A simple and elegant notes-taking web app built with **React JS**. Notes-TKing h
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Homepage
+<img src="https://github.com/rahulp1262003/Notes-App/blob/main/notes-app/assets/screenshots/homePage.png" width="1000"/>
+
+### 📝EditAndDelete
+<img src="https://github.com/rahulp1262003/Notes-App/blob/main/notes-app/assets/screenshots/editAndDelete.png" width="1000"/>
+
+### ✏️EditNote
+<img src="https://github.com/rahulp1262003/Notes-App/blob/main/notes-app/assets/screenshots/editeNote.png" width="1000"/>
+
 ## 🚀 Getting Started
 
 ### Prerequisites
